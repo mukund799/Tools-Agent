@@ -45,12 +45,10 @@ def get_newspaper():
     "if question is about get the newspaper. then this function will be responsible"
     return f"Here you go. Getting today's newspaper."
 @tool
-def general_response():
+def common():
     '''
-    if user question does not match with any of the defined tools then this function should be called. This function generate
-    a general response for any not valid question.
-    if question is about general. then this function will be responsible
+    for any general question. like add substract multiply etc.
     '''
     return f"Hmm. I don;t know that"
 
-tools = [add_to_shopping_list, show_shopping_list, greeting,clean_room,get_weather,get_newspaper,general_response]
+tools = [add_to_shopping_list, show_shopping_list, greeting,clean_room,get_weather,get_newspaper,common]
