@@ -4,5 +4,5 @@ from dotenv import load_dotenv
 load_dotenv()
 def load_llm():
     COHERE_API_KEY = os.getenv("COHERE_API_KEY")
-    llm = ChatCohere(model="command-r", cohere_api_key="")
+    llm = ChatCohere(model="command-r", cohere_api_key=COHERE_API_KEY)
     return llm
