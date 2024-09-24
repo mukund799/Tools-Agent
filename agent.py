@@ -5,7 +5,7 @@ from llm import load_llm
 llm = load_llm()
 prompt = ChatPromptTemplate.from_messages(
     [
-        ("system", "You are a helpful assistant"),
+        ("system", "You are a helpful assistant. Return the response as it is. Answer from the tools only. You have no right to give response from other source."),
         ("human", "{input}"),
         # Placeholders fill up a **list** of messages
         ("placeholder", "{agent_scratchpad}")

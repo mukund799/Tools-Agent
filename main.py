@@ -2,7 +2,7 @@ from agent import agent_executor
 
 def main():
     while(True):
-        question = input("Enter your query")
+        question = input("Enter your query \n")
         if question.lower() == "exit":
             break
         res = agent_executor.invoke({"input":question})
