@@ -8,5 +8,6 @@ def main():
             break
         res = agent_executor.invoke({"input":question})
         print(res['output'])
+        print(res)
 if __name__ == "__main__":
     main()

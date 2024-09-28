@@ -12,4 +12,4 @@ prompt = ChatPromptTemplate.from_messages(
     ]
 )
 agent = create_tool_calling_agent(llm,tools,prompt)
-agent_executor = AgentExecutor(agent=agent,tools=tools,handle_parsing_errors=True)
+agent_executor = AgentExecutor(agent=agent,tools=tools,handle_parsing_errors=True, return_intermediate_steps=True)
